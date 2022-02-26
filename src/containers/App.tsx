@@ -3,7 +3,7 @@ import { WaitingTime } from '../components/WaitingTime';
 import { WaitingTimeState } from '../components/WaitingTime/types';
 
 function App() {
-  const [state, setState] = useState<WaitingTimeState>('running');
+  const [state, setState] = useState<WaitingTimeState>('idle');
 
   return (
     <div className="App">
@@ -15,6 +15,8 @@ function App() {
         onChange={(value) => setState(value)}
       />
 
+      <button onClick={() => setState('running')}>Play</button>
+      <button onClick={() => setState('pause')}>Pause</button>
       <button onClick={() => setState('reset')}>Reset</button>
     </div>
   );

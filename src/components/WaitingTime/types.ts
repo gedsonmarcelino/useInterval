@@ -1,4 +1,4 @@
-export type WaitingTimeState = 'running' | 'idle' | 'reset';
+export type WaitingTimeState = 'running' | 'idle' | 'reset' | 'pause';
 
 export type WaitingTimeProps = {
   time: number;

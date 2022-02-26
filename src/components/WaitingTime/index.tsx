@@ -27,6 +27,10 @@ export function WaitingTime({
       setCount(time);
       onChange('running');
     }
+
+    if (state === 'pause') {
+      onChange('idle');
+    }
   }, [state]);
 
   return (

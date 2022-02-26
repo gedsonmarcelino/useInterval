@@ -8,6 +8,7 @@ States:
 
 - idle
 - running
+- pause
 - reset
 
 ```
